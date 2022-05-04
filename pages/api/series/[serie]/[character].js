@@ -11,7 +11,6 @@ export default async function handler (req, res) {
         const { serie, character } = req.query;
 
         const quotes = await Quote.find({ serie: serie, character: character });
-        console.log();
 
         if (quotes.length === 0) return res.json({ err: 'No quotes from this character!' });
             

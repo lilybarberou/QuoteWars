@@ -1,28 +1,13 @@
-import { useState } from 'react'
 import Head from 'next/head'
-
-import { CodeBlock, CopyBlock, nord } from "react-code-blocks";
 
 import Nav from '../components/Nav';
 import Header from '../components/Header';
+import DemoRun from '../components/DemoRun';
 import Footer from '../components/Footer';
-import Button from '../components/generics/Button';
-
-import { getRandomQuote } from '../lib/api';
+import Demo from '../components/generics/Demo';
 
 
 export default function Home() {
-
-  const [text, setText] = useState(`{  }`);
-
-  const handleRunClick = async () => {
-    const quote = await getRandomQuote();
-    setText(`   {
-      "serie": "${quote.serie}",
-      "author": "${quote.character}",
-      "quote": "${quote.quote}"
-    }`);
-  }
 
   return (
     <>
@@ -36,33 +21,49 @@ export default function Home() {
 
       <Header/>
 
-      <div id='try-it' className='container px-2 relative mx-auto max-w-4xl mt-20 pt-20 pb-10 bg-gradient-to-r'>
-          <h1 className="mb-5 text-4xl font-bold font-display">Try it</h1>
-          <h2 className="mb-8 text-lg">Run this code to get a random quote 🚀</h2>
-          <CopyBlock
-            text={`fetch('https://quote-wars.vercel.app/api/random')
-            .then(res => res.json())
-            .then(quote => console.log(quote))`}
-            language='javascript'
-            showLineNumbers={false}
-            wrapLines
-            theme={nord}
-            customStyle={{padding:'1.25rem'}}
-          />
+      <DemoRun/>
 
-          <Button onClick={handleRunClick} value="Run"/>
+      <Demo
+        req="'https://quote-wars.vercel.app/api/series/gameofthrones'"
+        res='{
+          "serie": "Game of Thrones",
+          "author": "Arya Stark",
+          "quote": "Winter is coming"
+        }'
+        title='Get quote by specific serie'
+      />
 
-          <CodeBlock
-            text={text}
-            language='json'
-            showLineNumbers={false}
-            wrapLines
-            theme={nord}
-            customStyle={{padding:'1.25rem'}}
-          />
+      <Demo
+        req="'https://quote-wars.vercel.app/api/series/starwars/darkvador'"
+        res='{
+          "serie": "Star Wars",
+          "author": "Dark Vador",
+          "quote": "I am your father"
+        }'
+        title='Get quote by specific character'
+      />
 
-      </div>
+      <Demo
+        req="'https://quote-wars.vercel.app/api/series'"
+        res='[
+          "Game of Thrones",
+          "Star Wars",
+          "The Mandalorian",
+          "..."
+        ]'
+        title='Get available series'
+      />
 
+      <Demo
+        req="'https://quote-wars.vercel.app/api/characters/gameofthrones'"
+        res='[
+          "Jon Snow",
+          "Arya Stark",
+          "Sandor Clegane",
+          "..."
+        ]'
+        title='Get available characters from a serie'
+      />
       
       <Footer/>
 
