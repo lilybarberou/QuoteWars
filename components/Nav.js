@@ -1,4 +1,4 @@
-import Icon from '../public/Icon.png';
+import Icon from '../assets/images/Icon.png';
 import Image from 'next/image';
 
 
