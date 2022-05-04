@@ -14,7 +14,7 @@ export default async function handler (req, res) {
         if (quotes.length === 0) return res.json({ err: 'No quotes from this serie!' });
             
         const random = Math.floor(Math.random() * quotes.length)
-        res.status(200).json(quotes[random]);
+        res.status(200).json({ serie: quotes[random].serie, character: quotes[random].character, quote: quotes[random].quote });
     }
     catch (error) {
         res.status(400).json({ success: false })
