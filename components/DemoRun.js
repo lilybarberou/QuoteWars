@@ -26,7 +26,10 @@ export default function DemoRun() {
 
     return(
         <div id='try-it' className='container px-2 relative mx-auto max-w-4xl mt-32 mb-20'>
-            <h1 className="mb-5 text-4xl font-bold font-display">Try it</h1>
+            <h1 className="mb-5 text-4xl font-bold font-display">
+                <span className="text-indigo-500">» </span>
+                Try it
+            </h1>
             <h2 className="mb-8 text-lg">Run this code to get a random quote 🚀</h2>
             
             <CopyBlock

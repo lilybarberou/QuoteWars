@@ -41,6 +41,7 @@ export default function Home() {
           "quote": "I am your father"
         }'
         title='Get quote by specific character'
+        dark={true}
       />
 
       <Demo
@@ -63,6 +64,7 @@ export default function Home() {
           "..."
         ]'
         title='Get available characters from a serie'
+        dark={true}
       />
       
       <Footer/>
