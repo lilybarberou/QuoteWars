@@ -1,6 +1,5 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
 import { useState } from 'react'
+import Head from 'next/head'
 
 import { CodeBlock, CopyBlock, nord } from "react-code-blocks";
 
@@ -25,7 +24,7 @@ export default function Home() {
   }
 
   return (
-    <div className="">
+    <>
       <Head>
         <title>Quote Wars API</title>
         <meta name="description" content="An Api to listen to your best mates!" />
@@ -68,6 +67,6 @@ export default function Home() {
       
       <Footer/>
 
-     </div>
+     </>
   )
 }
