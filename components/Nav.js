@@ -1,4 +1,4 @@
-import Icon from '../public/static/images/icon.png';
+import Icon from '../public/static/images/logo.png';
 import Image from 'next/image';
 
 

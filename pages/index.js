@@ -14,7 +14,7 @@ export default function Home() {
       <Head>
         <title>Quote Wars API</title>
         <meta name="description" content="An Api to listen to your best mates!" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
       </Head>
 
       <Nav/>
