@@ -1,3 +1,5 @@
+import Button from "./generics/Button"
+
 export default function Header() {
 
     const handleClick = () => {
@@ -15,9 +17,7 @@ export default function Header() {
                 <p className="my-2 text-sm sm:text-base">Powered by <a className='text-blue-700 underline' href="https://expressjs.com/">Express</a> and <a className='text-blue-700 underline' href="https://www.mongodb.com/">MongoDB</a></p>
             </div>
 
-            <button onClick={handleClick} type="button" className="bg-gradient-to-r from-indigo-500 to-sky-500 hover:from-indigo-600 hover:to-sky-600 text-white font-bold py-2 px-4 border-b-4 border-indigo-700 rounded">
-                Get Started
-            </button>
+            <Button onClick={handleClick} value="Get Started" />
 
             <div className="mt-28">
                 <button onClick={handleClick} className="text-gray-800 focus:outline-none" aria-label="Scroll Down">

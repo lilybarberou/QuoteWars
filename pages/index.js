@@ -6,6 +6,7 @@ import { CodeBlock, CopyBlock, nord } from "react-code-blocks";
 import Nav from '../components/Nav';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Button from '../components/generics/Button';
 
 import { getRandomQuote } from '../lib/api';
 
@@ -49,9 +50,7 @@ export default function Home() {
             customStyle={{padding:'1.25rem'}}
           />
 
-          <button onClick={handleRunClick} type="button" className="my-8 bg-gradient-to-r from-indigo-500 to-sky-500 text-white font-bold py-2 px-4 border-b-4 border-indigo-700 rounded">
-            Run
-          </button>
+          <Button onClick={handleRunClick} value="Run"/>
 
           <CodeBlock
             text={text}
