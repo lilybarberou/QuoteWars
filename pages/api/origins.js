@@ -9,11 +9,11 @@ export default async function handler (req, res) {
     try {
         const quotes = await Quote.find();
 
-        let series = [];
+        let origins = [];
         
-        quotes.forEach(({serie}) => !series.includes(serie) && series.push(serie));
+        quotes.forEach(({origin}) => !origins.includes(origin) && origins.push(origin));
 
-        res.status(200).json(series);
+        res.status(200).json(origins);
     }
     catch (error) {
         res.status(400).json({ success: false })

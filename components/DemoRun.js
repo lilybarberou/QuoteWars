@@ -17,7 +17,7 @@ export default function DemoRun() {
         const quote = await getRandomQuote();
         setLoading(false);
         setText(`       {
-            "serie": "${quote.serie}",
+            "origin": "${quote.origin}",
             "author": "${quote.character}",
             "quote": "${quote.quote}"
         }`);

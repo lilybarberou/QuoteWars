@@ -24,19 +24,19 @@ export default function Home() {
       <DemoRun/>
 
       <Demo
-        req="'https://quote-wars.vercel.app/api/series/gameofthrones'"
+        req="'https://quote-wars.vercel.app/api/origin/gameofthrones'"
         res='{
-          "serie": "Game of Thrones",
+          "origin": "Game of Thrones",
           "author": "Arya Stark",
           "quote": "Winter is coming"
         }'
-        title='Get quote by specific serie'
+        title='Get quote by specific origin'
       />
 
       <Demo
-        req="'https://quote-wars.vercel.app/api/series/starwars/darkvador'"
+        req="'https://quote-wars.vercel.app/api/origin/starwars/darkvador'"
         res='{
-          "serie": "Star Wars",
+          "origin": "Star Wars",
           "author": "Dark Vador",
           "quote": "I am your father"
         }'
@@ -45,14 +45,14 @@ export default function Home() {
       />
 
       <Demo
-        req="'https://quote-wars.vercel.app/api/series'"
+        req="'https://quote-wars.vercel.app/api/origins'"
         res='[
           "Game of Thrones",
           "Star Wars",
           "The Mandalorian",
           "..."
         ]'
-        title='Get available series'
+        title='Get available origins'
       />
 
       <Demo
@@ -63,7 +63,7 @@ export default function Home() {
           "Sandor Clegane",
           "..."
         ]'
-        title='Get available characters from a serie'
+        title='Get available characters from an origin'
         dark={true}
       />
       

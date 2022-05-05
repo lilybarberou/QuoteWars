@@ -8,14 +8,14 @@ export default async function handler (req, res) {
 
     try {
 
-        const { serie, character } = req.query;
+        const { origin, character } = req.query;
 
-        const quotes = await Quote.find({ serie: serie, character: character });
+        const quotes = await Quote.find({ origin: origin, character: character });
 
         if (quotes.length === 0) return res.json({ err: 'No quotes from this character!' });
             
         const random = Math.floor(Math.random() * quotes.length)
-        res.status(200).json({ serie: quotes[random].serie, character: quotes[random].character, quote: quotes[random].quote });
+        res.status(200).json({ origin: quotes[random].origin, character: quotes[random].character, quote: quotes[random].quote });
 
     }
     catch (error) {
