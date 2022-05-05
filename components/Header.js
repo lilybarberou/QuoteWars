@@ -14,7 +14,7 @@ export default function Header() {
             <h1 className="lg:text-7xl sm:text-6xl text-4xl font-display font-bold text-shadow-md">Quote Wars API</h1>
             <div className="py-10">
                 <h3 className="sm:text-2xl text-lg">A free restful API serving quality series quotes ✨</h3>
-                <p className="my-2 text-sm sm:text-base">Powered by <a className='text-blue-700 underline' href="https://expressjs.com/">Express</a> and <a className='text-blue-700 underline' href="https://www.mongodb.com/">MongoDB</a></p>
+                <p className="my-2 text-sm sm:text-base">Powered by <a className='text-blue-700 underline' target="_blank" href="https://www.mongodb.com/">MongoDB</a></p>
             </div>
 
             <Button onClick={handleClick} value="Get Started" />
