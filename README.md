@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/Nahay/quote-wars">
+  <a href="https://github.com/Nahay/quoteWars">
     <img src="https://raw.githubusercontent.com/Nahay/QuoteWars/main/public/static/images/logo.png" alt="Logo" width="85" height="80">
   </a>
 
@@ -8,7 +8,7 @@
   <p align="center">
     <samp>An API serving series quotes</samp>
     <br />
-    <a href="https://quote-wars.vercel.app/"><strong>Explore the api »</strong></a>
+    <a href="https://quotewars.vercel.app/"><strong>Explore the api »</strong></a>
   </p>
 </p>
 
