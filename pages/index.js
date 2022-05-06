@@ -32,7 +32,7 @@ export default function Home() {
         <meta property="og:url" content="https://quotewars.vercel.app"/>
         
         <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:image:alt" content="https://raw.githubusercontent.com/QuoteWars/main/public/static/images/banner.png"/>
+        <meta name="twitter:image:alt" content="https://raw.githubusercontent.com/Nahay/QuoteWars/main/public/static/images/banner.png"/>
 
         <meta name="google-site-verification" content="ZFCVBtEpUhi4LdjJNKBjTqDLlOHtNWqSdHiF45NBKow" />
 
