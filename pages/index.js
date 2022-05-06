@@ -25,7 +25,7 @@ export default function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:description" content="Quote Wars is a free API serving serie & movie quotes!"/>
         <meta property="og:site_name" content="Quote Wars API"/>
-        <meta property="og:image" content="https://raw.githubusercontent.com/QuoteWars/main/public/static/images/banner.png"/>
+        <meta property="og:image" content="https://raw.githubusercontent.com/Nahay/QuoteWars/main/public/static/images/banner.png"/>
         <meta property="og:image:type" content="image/jpeg" />
         <meta property="og:image:width" content="590" />
         <meta property="og:image:height" content="300" />
