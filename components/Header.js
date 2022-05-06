@@ -13,7 +13,7 @@ export default function Header() {
         <main className="container px-2 relative mx-auto max-w-4xl text-center mt-20 pt-20 pb-10">
             <h1 className="lg:text-7xl sm:text-6xl text-4xl font-display font-bold text-shadow-md">Quote Wars API</h1>
             <div className="py-10">
-                <h3 className="sm:text-2xl text-lg">A free restful API serving quality serie & movie quotes ✨</h3>
+                <h2 className="sm:text-2xl text-lg">A free restful API serving quality serie & movie quotes ✨</h2>
                 <p className="my-2 text-sm sm:text-base">Powered by <a className='text-blue-700 underline' target="_blank" href="https://www.mongodb.com/">MongoDB</a></p>
             </div>
 
