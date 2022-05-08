@@ -12,10 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+        <link rel="icon" href="/icon.ico" />
         <meta name="theme-color" content="#4f46e5"/>
 
         <meta name="keywords" content="quotewars, serie api, movie api, quote wars api, nahay" />
@@ -36,9 +33,8 @@ export default function Home() {
 
         <meta name="google-site-verification" content="ZFCVBtEpUhi4LdjJNKBjTqDLlOHtNWqSdHiF45NBKow" />
 
-        <title>Quote Wars API</title>
         <meta name="description" content="Quote Wars is a free API serving quality serie & movie quotes!" />
-        <link rel="icon" href="/icon.ico" />
+        <title>Quote Wars API</title>
       </Head>
 
       <Nav/>
