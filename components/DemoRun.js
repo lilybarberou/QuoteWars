@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { CodeBlock, nord } from "react-code-blocks";
 
-import Button from "./generics/Button"
-
 import { getRandomQuote } from '../lib/api';
 
 
@@ -14,12 +12,13 @@ export default function DemoRun() {
     const handleRunClick = async () => {
         setLoading(true);
         setText(`{  }`);
-        const quote = await getRandomQuote();
+
+        const { origin, character, quote } = await getRandomQuote();
         setLoading(false);
         setText(`       {
-            "origin": "${quote.origin}",
-            "author": "${quote.character}",
-            "quote": "${quote.quote}"
+            "origin": "${origin}",
+            "author": "${character}",
+            "quote": "${quote}"
         }`);
     }
 
@@ -45,7 +44,6 @@ export default function DemoRun() {
 
             <button
                 onClick={handleRunClick}
-                type="button"
                 className="inline-flex items-center my-8 bg-gradient-to-r from-indigo-500 to-sky-500 text-white font-bold py-2 px-4 border-b-4 border-indigo-700 rounded"
             >
                 {
