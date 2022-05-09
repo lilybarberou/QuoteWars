@@ -36,6 +36,7 @@ export default function create () {
     return(
         <>
             <Head>
+                <link rel="icon" href="/icon.ico" />
                 <title>Create</title>
                 <meta name="description" content="Create a new quote for Quote Wars API!" />
             </Head>
