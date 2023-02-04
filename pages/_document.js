@@ -10,6 +10,7 @@ export default function Document() {
                 <link rel='manifest' href='/manifest.json' />
                 <link rel='icon' href='/favicon.ico' />
                 <link rel='apple-touch-icon' href='./apple-touch-icon.png' />
+                <link rel='canonical' href='https://quotewars.lilybarberou.fr/' />
 
                 <meta name='keywords' content='quotewars, serie api, movie api, quote wars api, nahay' />
                 <meta name='author' content='Lily Barberou' />

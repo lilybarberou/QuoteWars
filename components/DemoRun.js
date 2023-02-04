@@ -29,7 +29,7 @@ export default function DemoRun() {
             <p className='mb-8 text-lg'>Run this code to get a random quote 🚀</p>
 
             <CodeBlock
-                text={`fetch('https://quote-wars.vercel.app/api/random')
+                text={`fetch('https://quotewars.lilybarberou.fr/api/random')
                 .then(res => res.json())
                 .then(quote => console.log(quote))`}
                 language='javascript'

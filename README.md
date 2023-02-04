@@ -8,7 +8,7 @@
   <p align="center">
     <samp>An API serving series quotes</samp>
     <br />
-    <a href="https://quotewars.vercel.app/"><strong>Explore the api »</strong></a>
+    <a href="https://quotewars.lilybarberou.fr/"><strong>Explore the api »</strong></a>
   </p>
 </p>
 

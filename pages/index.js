@@ -20,7 +20,7 @@ export default function Home() {
             <DemoRun />
 
             <Demo
-                req="'https://quote-wars.vercel.app/api/origin/gameofthrones'"
+                req="'https://quotewars.lilybarberou.fr/api/origin/gameofthrones'"
                 res='{
           "origin": "Game of Thrones",
           "author": "Arya Stark",
@@ -30,7 +30,7 @@ export default function Home() {
             />
 
             <Demo
-                req="'https://quote-wars.vercel.app/api/origin/starwars/darkvador'"
+                req="'https://quotewars.lilybarberou.fr/api/origin/starwars/darkvador'"
                 res='{
           "origin": "Star Wars",
           "author": "Dark Vador",
@@ -41,7 +41,7 @@ export default function Home() {
             />
 
             <Demo
-                req="'https://quote-wars.vercel.app/api/origins'"
+                req="'https://quotewars.lilybarberou.fr/api/origins'"
                 res='[
           "Game of Thrones",
           "Star Wars",
@@ -52,7 +52,7 @@ export default function Home() {
             />
 
             <Demo
-                req="'https://quote-wars.vercel.app/api/characters/gameofthrones'"
+                req="'https://quotewars.lilybarberou.fr/api/characters/gameofthrones'"
                 res='[
           "Jon Snow",
           "Arya Stark",
